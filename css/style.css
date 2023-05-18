@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  background-color: #1e1e1e;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 600px) {
+  main .desktop-nav {
+    display: none;
+  }
+}
+main .mobile-nav {
+  display: none;
+}
+@media (max-width: 600px) {
+  main .mobile-nav {
+    display: flex;
+  }
+}
+main nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 600px) {
+  main nav {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}
+main nav input {
+  display: none;
+}
+main nav label {
+  color: white;
+  display: none;
+}
+@media (max-width: 600px) {
+  main nav label {
+    display: block;
+    position: absolute;
+    padding-left: 20rem;
+    padding-top: 1.75rem;
+    font-size: 3.5rem;
+  }
+}
+main nav a {
+  margin: 1rem;
+  text-decoration: none;
+  font-family: sans-serif;
+  color: white;
+  font-size: 1.25rem;
+}
+main nav a img {
+  width: 6rem;
+  object-fit: cover;
+  margin-left: 1.25rem;
+}
+main .hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .hero h1 {
+  font-family: sans-serif;
+  color: white;
+  font-size: 6rem;
+  margin-top: 6rem;
+}
+main .hero p {
+  width: 60%;
+  color: white;
+  font-family: sans-serif;
+  margin: 0.5rem;
+  text-align: center;
+}
+main .hero button {
+  background-color: transparent;
+  opacity: 50%;
+  color: white;
+  font-size: 1.5rem;
+  border: 3px solid white;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  margin-bottom: 10rem;
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#about h1 {
+  font-size: 3rem;
+  font-family: sans-serif;
+  margin-top: 3rem;
+}
+#about p {
+  width: 60%;
+  font-family: sans-serif;
+  margin: 0.5rem;
+  text-align: center;
+}
+#about .flexbox {
+  display: flex;
+  flex-direction: row;
+}
+#about .flexbox .point {
+  width: 20rem;
+  height: 20rem;
+  background-color: gray;
+  margin: 5rem;
+}
+
+#news {
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#news h1 {
+  font-size: 3rem;
+  font-family: sans-serif;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+#news .flexbox {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 3rem;
+}
+#news .flexbox div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#news .flexbox div .point {
+  width: 20rem;
+  height: 20rem;
+  background-color: #1e1e1e;
+  margin: 1rem 5rem;
+}
+#news .flexbox div h3 {
+  text-align: center;
+  font-family: sans-serif;
+  color: black;
+}
+
+/*# sourceMappingURL=style.css.map */
