@@ -15,10 +15,19 @@ main {
 
   .mobile-nav {
     display: none;
+    background-color: #1e1e1e;
 
     #menu-items {
       display: none;
       flex-direction: column;
+
+      .nav-item {
+        width: 100vw;
+        border-bottom: 3px solid white;
+        margin-left: 0;
+        padding-left: 1rem;
+        padding-bottom: 2rem;
+      }
     }
 
     @include media.sm {
@@ -78,6 +87,10 @@ main {
       color: white;
       font-size: 6rem;
       margin-top: 6rem;
+
+      @include media.sm {
+        font-size: 2rem;
+      }
     }
     p {
       width: 60%;
@@ -85,6 +98,10 @@ main {
       font-family: sans-serif;
       margin: 0.5rem;
       text-align: center;
+
+      @include media.sm {
+        font-size: 0.75rem;
+      }
     }
 
     button {
