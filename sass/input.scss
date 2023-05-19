@@ -18,8 +18,11 @@ main {
     background-color: #1e1e1e;
 
     #menu-items {
+      margin-top: 8rem;
+      background-color: #1e1e1e;
       display: none;
       flex-direction: column;
+      position: absolute;
 
       .nav-item {
         width: 100vw;
