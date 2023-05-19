@@ -123,21 +123,43 @@ main .hero button {
   font-family: sans-serif;
   margin-top: 3rem;
 }
+@media (max-width: 600px) {
+  #about h1 {
+    font-size: 1.5rem;
+    margin: 1rem;
+    text-align: center;
+  }
+}
 #about p {
   width: 60%;
   font-family: sans-serif;
   margin: 0.5rem;
   text-align: center;
 }
+@media (max-width: 600px) {
+  #about p {
+    font-size: 0.75rem;
+  }
+}
 #about .flexbox {
   display: flex;
   flex-direction: row;
+}
+@media (max-width: 600px) {
+  #about .flexbox {
+    flex-direction: column;
+  }
 }
 #about .flexbox .point {
   width: 20rem;
   height: 20rem;
   background-color: gray;
   margin: 5rem;
+}
+@media (max-width: 600px) {
+  #about .flexbox .point {
+    margin: 1rem;
+  }
 }
 
 #news {
@@ -147,16 +169,35 @@ main .hero button {
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 600px) {
+  #news {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+}
 #news h1 {
   font-size: 3rem;
   font-family: sans-serif;
   margin-top: 3rem;
   margin-bottom: 2rem;
 }
+@media (max-width: 600px) {
+  #news h1 {
+    font-size: 1.5rem;
+    margin: 1rem;
+    text-align: center;
+  }
+}
 #news .flexbox {
   display: flex;
   flex-direction: row;
   margin-bottom: 3rem;
+}
+@media (max-width: 600px) {
+  #news .flexbox {
+    flex-direction: column;
+    margin: 0;
+  }
 }
 #news .flexbox div {
   display: flex;
@@ -170,10 +211,20 @@ main .hero button {
   background-color: #1e1e1e;
   margin: 1rem 5rem;
 }
+@media (max-width: 600px) {
+  #news .flexbox div .point {
+    margin: 1rem;
+  }
+}
 #news .flexbox div h3 {
   text-align: center;
   font-family: sans-serif;
   color: black;
+}
+@media (max-width: 600px) {
+  #news .flexbox div h3 {
+    font-size: 1rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
