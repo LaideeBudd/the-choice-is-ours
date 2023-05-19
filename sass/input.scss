@@ -100,7 +100,7 @@ main {
       text-align: center;
 
       @include media.sm {
-        font-size: 0.75rem;
+        font-size: 1rem;
       }
     }
 
@@ -141,7 +141,7 @@ main {
     text-align: center;
 
     @include media.sm {
-      font-size: 0.75rem;
+      font-size: 1rem;
     }
   }
 

@@ -98,7 +98,7 @@ main .hero p {
 }
 @media (max-width: 600px) {
   main .hero p {
-    font-size: 0.75rem;
+    font-size: 1rem;
   }
 }
 main .hero button {
@@ -138,7 +138,7 @@ main .hero button {
 }
 @media (max-width: 600px) {
   #about p {
-    font-size: 0.75rem;
+    font-size: 1rem;
   }
 }
 #about .flexbox {
