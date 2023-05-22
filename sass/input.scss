@@ -17,6 +17,7 @@ main {
 
   @include media.sm {
     background-image: none;
+    background-color: #ec1e24;
   }
 
   .desktop-nav {
@@ -100,6 +101,7 @@ main {
       background-image: url("../images/hero-mobile.png");
       background-size: cover;
       background-position: center;
+      margin-top: 3rem;
     }
 
     h1 {
@@ -111,7 +113,7 @@ main {
       line-height: 80%;
 
       @include media.sm {
-        margin-top: 9rem;
+        // margin-top: 9rem;
         font-size: 4rem;
         color: white;
         margin-left: 1rem;
