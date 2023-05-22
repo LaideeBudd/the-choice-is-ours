@@ -230,4 +230,98 @@ main .hero button {
   }
 }
 
+#donate {
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+}
+#donate h1 {
+  margin-top: 3rem;
+  font-family: sans-serif;
+  font-size: 3rem;
+  justify-self: center;
+  align-self: center;
+}
+@media (max-width: 600px) {
+  #donate h1 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+  }
+}
+#donate .money-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 600px) {
+  #donate .money-box {
+    flex-direction: column;
+  }
+}
+#donate .money-box .preset-dollar-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#donate .money-box .preset-dollar-box .dollar-buttons {
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background-color: #1e1e1e;
+  color: white;
+  align-self: center;
+  justify-self: center;
+  margin: 0.5rem;
+}
+@media (max-width: 600px) {
+  #donate .money-box .preset-dollar-box .dollar-buttons {
+    font-size: 1rem;
+  }
+}
+#donate .money-box p {
+  font-size: 2rem;
+  font-family: sans-serif;
+  margin: 3rem;
+  margin-left: 2rem;
+}
+@media (max-width: 600px) {
+  #donate .money-box p {
+    font-size: 1rem;
+    margin-left: 0;
+    margin: 0.5rem;
+    justify-self: center;
+  }
+}
+#donate .money-box .user-amount-box {
+  display: flex;
+  flex-direction: column;
+}
+#donate .money-box .user-amount-box input {
+  margin-top: 0.25rem;
+  height: 3.75rem;
+  width: 22rem;
+}
+#donate .money-box .user-amount-box label {
+  margin-top: 0.5rem;
+}
+@media (max-width: 600px) {
+  #donate .money-box .user-amount-box label {
+    margin-bottom: 0.5rem;
+  }
+}
+#donate .section-underline {
+  width: 60%;
+  align-self: center;
+  background-color: #1e1e1e;
+  height: 3px;
+}
+@media (max-width: 600px) {
+  #donate .section-underline {
+    width: 95%;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
