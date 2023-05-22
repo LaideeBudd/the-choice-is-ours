@@ -279,6 +279,7 @@ main .hero button {
 @media (max-width: 600px) {
   #donate .money-box .preset-dollar-box .dollar-buttons {
     font-size: 1rem;
+    padding: 0.5rem;
   }
 }
 #donate .money-box p {
@@ -302,7 +303,12 @@ main .hero button {
 #donate .money-box .user-amount-box input {
   margin-top: 0.25rem;
   height: 3.75rem;
-  width: 22rem;
+  width: 25rem;
+}
+@media (max-width: 600px) {
+  #donate .money-box .user-amount-box input {
+    width: 18rem;
+  }
 }
 #donate .money-box .user-amount-box label {
   margin-top: 0.5rem;
@@ -320,7 +326,107 @@ main .hero button {
 }
 @media (max-width: 600px) {
   #donate .section-underline {
-    width: 95%;
+    width: 80%;
+  }
+}
+#donate .information {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 1rem;
+}
+@media (max-width: 600px) {
+  #donate .information {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+#donate .information .name-address {
+  margin-right: 8rem;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 600px) {
+  #donate .information .name-address {
+    margin-right: 0;
+  }
+}
+#donate .information .name-address input {
+  margin-top: 0.25rem;
+  height: 3.75rem;
+  width: 24rem;
+}
+@media (max-width: 600px) {
+  #donate .information .name-address input {
+    width: 18rem;
+    align-self: center;
+  }
+}
+#donate .information .name-address label {
+  margin-top: 0.5rem;
+}
+@media (max-width: 600px) {
+  #donate .information .name-address label {
+    margin-bottom: 0.5rem;
+  }
+}
+#donate .information .name-address .city-state-zip {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+#donate .information .name-address .city-state-zip .city {
+  display: flex;
+  flex-direction: column;
+}
+#donate .information .name-address .city-state-zip .city input {
+  height: 3.75rem;
+  width: 11rem;
+}
+@media (max-width: 600px) {
+  #donate .information .name-address .city-state-zip .city input {
+    width: 5rem;
+  }
+}
+#donate .information .name-address .city-state-zip .state {
+  display: flex;
+  flex-direction: column;
+}
+#donate .information .name-address .city-state-zip .state select {
+  height: 3.75rem;
+  margin: 0.5rem;
+  width: 6rem;
+}
+#donate .information .name-address .city-state-zip .zip {
+  display: flex;
+  flex-direction: column;
+}
+#donate .information .name-address .city-state-zip .zip input {
+  height: 3.75rem;
+  width: 6rem;
+}
+#donate .information .email-phoneNumber {
+  display: flex;
+  flex-direction: column;
+}
+#donate .information .email-phoneNumber input {
+  margin-top: 0.25rem;
+  height: 3.75rem;
+  width: 24rem;
+}
+@media (max-width: 600px) {
+  #donate .information .email-phoneNumber input {
+    width: 18rem;
+    align-self: center;
+  }
+}
+#donate .information .email-phoneNumber label {
+  margin-top: 0.5rem;
+}
+@media (max-width: 600px) {
+  #donate .information .email-phoneNumber label {
+    margin-bottom: 0.5rem;
   }
 }
 

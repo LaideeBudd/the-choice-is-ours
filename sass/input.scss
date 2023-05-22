@@ -281,6 +281,7 @@ main {
 
         @include media.sm {
           font-size: 1rem;
+          padding: 0.5rem;
         }
       }
     }
@@ -306,7 +307,11 @@ main {
       input {
         margin-top: 0.25rem;
         height: 3.75rem;
-        width: 22rem;
+        width: 25rem;
+
+        @include media.sm {
+          width: 18rem;
+        }
       }
 
       label {
@@ -326,7 +331,114 @@ main {
     height: 3px;
 
     @include media.sm {
-      width: 95%;
+      width: 80%;
+    }
+  }
+
+  .information {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 1rem;
+
+    @include media.sm {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .name-address {
+      margin-right: 8rem;
+      display: flex;
+      flex-direction: column;
+
+      @include media.sm {
+        margin-right: 0;
+      }
+
+      input {
+        margin-top: 0.25rem;
+        height: 3.75rem;
+        width: 24rem;
+
+        @include media.sm {
+          width: 18rem;
+          align-self: center;
+        }
+      }
+
+      label {
+        margin-top: 0.5rem;
+
+        @include media.sm {
+          margin-bottom: 0.5rem;
+        }
+      }
+
+      .city-state-zip {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        .city {
+          display: flex;
+          flex-direction: column;
+
+          input {
+            height: 3.75rem;
+            width: 11rem;
+
+            @include media.sm {
+              width: 5rem;
+            }
+          }
+        }
+
+        .state {
+          display: flex;
+          flex-direction: column;
+
+          select {
+            height: 3.75rem;
+            margin: 0.5rem;
+            width: 6rem;
+          }
+        }
+
+        .zip {
+          display: flex;
+          flex-direction: column;
+
+          input {
+            height: 3.75rem;
+            width: 6rem;
+          }
+        }
+      }
+    }
+
+    .email-phoneNumber {
+      display: flex;
+      flex-direction: column;
+
+      input {
+        margin-top: 0.25rem;
+        height: 3.75rem;
+        width: 24rem;
+
+        @include media.sm {
+          width: 18rem;
+          align-self: center;
+        }
+      }
+
+      label {
+        margin-top: 0.5rem;
+
+        @include media.sm {
+          margin-bottom: 0.5rem;
+        }
+      }
     }
   }
 }
