@@ -2,11 +2,6 @@
 @use "reset";
 
 @font-face {
-  font-family: "Montserrat";
-  src: url(../fonts/Montserrat-Regular.otf);
-}
-
-@font-face {
   font-family: "Bebas Nue";
   src: url(../fonts/BebasNeue-Regular.ttf);
 }
@@ -132,9 +127,9 @@ main {
       text-align: left;
 
       @include media.sm {
-        font-size: 1rem;
-        margin-top: 15rem;
-        width: 55%;
+        font-size: 0.8rem;
+        margin-top: 10rem;
+        width: 50%;
       }
     }
 
@@ -150,8 +145,8 @@ main {
       margin-left: 1rem;
 
       @include media.sm {
-        padding: 1rem 6rem;
-        margin-left: 0;
+        padding: 1rem 6.5rem;
+        margin-left: 1rem;
         align-self: center;
       }
     }
