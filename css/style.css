@@ -429,5 +429,44 @@ main .hero button {
     margin-bottom: 0.5rem;
   }
 }
+#donate .donate-button-checkbox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 18rem;
+  margin-top: 2rem;
+}
+@media (max-width: 600px) {
+  #donate .donate-button-checkbox {
+    align-items: center;
+  }
+}
+#donate .donate-button-checkbox .checkbox-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+#donate .donate-button-checkbox .checkbox-box p {
+  margin-left: 0.5rem;
+}
+@media (max-width: 600px) {
+  #donate .donate-button-checkbox {
+    margin-right: 0;
+  }
+}
+#donate .donate-button-checkbox button {
+  padding: 1rem 3rem;
+  color: black;
+  font-family: sans-serif;
+  font-size: 1.25rem;
+  margin: 1rem;
+  margin-right: 0;
+}
+@media (max-width: 600px) {
+  #donate .donate-button-checkbox button {
+    padding: 1rem 8rem;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

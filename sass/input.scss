@@ -441,4 +441,44 @@ main {
       }
     }
   }
+
+  .donate-button-checkbox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 18rem;
+    margin-top: 2rem;
+
+    @include media.sm {
+      align-items: center;
+    }
+
+    .checkbox-box {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      p {
+        margin-left: 0.5rem;
+      }
+    }
+
+    @include media.sm {
+      margin-right: 0;
+    }
+
+    button {
+      padding: 1rem 3rem;
+      color: black;
+      font-family: sans-serif;
+      font-size: 1.25rem;
+      margin: 1rem;
+      margin-right: 0;
+
+      @include media.sm {
+        padding: 1rem 8rem;
+      }
+    }
+  }
 }
