@@ -4,10 +4,22 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-Regular.otf);
+  font-family: "Bebas Nue";
+  src: url(../fonts/BebasNeue-Regular.ttf);
+}
 main {
-  background-color: #1e1e1e;
+  background-image: url("./../images/hero.png");
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 600px) {
+  main {
+    background-image: none;
+  }
 }
 @media (max-width: 600px) {
   main .desktop-nav {
@@ -16,11 +28,11 @@ main {
 }
 main .mobile-nav {
   display: none;
-  background-color: #1e1e1e;
+  background-color: #ec1e24;
 }
 main .mobile-nav #menu-items {
   margin-top: 8rem;
-  background-color: #1e1e1e;
+  background-color: #ec1e24;
   display: none;
   flex-direction: column;
   position: absolute;
@@ -57,9 +69,9 @@ main nav .navimages {
 main nav a {
   margin: 1rem;
   text-decoration: none;
-  font-family: sans-serif;
+  font-family: "Montserrat";
   color: white;
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 main nav a img {
   width: 6rem;
@@ -79,40 +91,61 @@ main nav #hamburger {
 main .hero {
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+@media (max-width: 600px) {
+  main .hero {
+    background-image: url("../images/hero-mobile.png");
+    background-size: cover;
+    background-position: center;
+  }
 }
 main .hero h1 {
-  font-family: sans-serif;
-  color: white;
-  font-size: 6rem;
-  margin-top: 6rem;
+  font-family: "Bebas Nue";
+  color: #ec1e24;
+  font-size: 9rem;
+  margin-top: 8rem;
+  margin-left: 1rem;
+  line-height: 80%;
 }
 @media (max-width: 600px) {
   main .hero h1 {
-    font-size: 2rem;
+    margin-top: 4rem;
+    font-size: 4.5rem;
+    color: white;
   }
 }
 main .hero p {
-  width: 60%;
-  color: white;
-  font-family: sans-serif;
+  margin-left: 2rem;
+  width: 30%;
+  color: black;
+  font-family: "Montserrat";
+  font-size: 1rem;
   margin: 0.5rem;
-  text-align: center;
+  margin-left: 1rem;
+  text-align: left;
 }
 @media (max-width: 600px) {
   main .hero p {
     font-size: 1rem;
+    margin-top: 15rem;
+    width: 55%;
   }
 }
 main .hero button {
   background-color: transparent;
-  opacity: 50%;
-  color: white;
-  font-size: 1.5rem;
-  border: 3px solid white;
+  color: #ec1e24;
+  font-family: "Montserrat";
+  font-size: 1rem;
+  border: 3px solid #ec1e24;
   padding: 1rem 2rem;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   margin-bottom: 10rem;
+  margin-left: 1rem;
+}
+@media (max-width: 600px) {
+  main .hero button {
+    padding: 1rem 6rem;
+  }
 }
 
 #about {
