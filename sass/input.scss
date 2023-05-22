@@ -106,8 +106,8 @@ main {
       font-family: "Bebas Nue";
       color: #ec1e24;
       font-size: 9rem;
-      margin-top: 8rem;
-      margin-left: 1rem;
+      margin-top: 10rem;
+      margin-left: 3rem;
       line-height: 80%;
 
       @include media.sm {
@@ -123,12 +123,13 @@ main {
       font-family: "Montserrat";
       font-size: 1rem;
       margin: 0.5rem;
-      margin-left: 1rem;
+      margin-left: 3rem;
       text-align: left;
 
       @include media.sm {
         font-size: 0.8rem;
         margin-top: 10rem;
+        margin-left: 1rem;
         width: 50%;
       }
     }
@@ -142,12 +143,13 @@ main {
       padding: 1rem 2rem;
       margin-top: 0.5rem;
       margin-bottom: 10rem;
-      margin-left: 1rem;
+      margin-left: 3rem;
 
       @include media.sm {
         padding: 1rem 6.5rem;
         margin-left: 1rem;
         align-self: center;
+        margin-bottom: 7rem;
       }
     }
   }
@@ -160,24 +162,27 @@ main {
   justify-content: center;
 
   h1 {
-    font-size: 3rem;
-    font-family: sans-serif;
-    margin-top: 3rem;
+    font-size: 5rem;
+    font-family: "Bebas Nue";
+    margin-top: 2rem;
+    color: #ec1e24;
 
     @include media.sm {
-      font-size: 1.5rem;
+      font-size: 2.5rem;
       margin: 1rem;
+      margin-top: 0;
       text-align: center;
     }
   }
   p {
     width: 60%;
-    font-family: sans-serif;
+    font-family: "Montserrat";
     margin: 0.5rem;
     text-align: center;
 
     @include media.sm {
-      font-size: 1rem;
+      font-size: 0.8rem;
+      width: 80%;
     }
   }
 
