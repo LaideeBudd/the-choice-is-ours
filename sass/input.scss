@@ -102,6 +102,7 @@ main {
       background-size: cover;
       background-position: center;
       margin-top: 3rem;
+      background-color: white;
     }
 
     h1 {
@@ -113,10 +114,10 @@ main {
       line-height: 80%;
 
       @include media.sm {
-        // margin-top: 9rem;
         font-size: 4rem;
         color: white;
         margin-left: 1rem;
+        margin-top: 5rem;
       }
     }
     p {

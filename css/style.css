@@ -97,6 +97,7 @@ main .hero {
     background-size: cover;
     background-position: center;
     margin-top: 3rem;
+    background-color: white;
   }
 }
 main .hero h1 {
@@ -112,6 +113,7 @@ main .hero h1 {
     font-size: 4rem;
     color: white;
     margin-left: 1rem;
+    margin-top: 5rem;
   }
 }
 main .hero p {
