@@ -112,7 +112,7 @@ main .hero h1 {
     font-size: 4rem;
     color: white;
     margin-left: 1rem;
-    margin-top: 5rem;
+    margin-top: 7rem;
   }
 }
 main .hero p {
@@ -146,7 +146,7 @@ main .hero button {
 }
 @media (max-width: 600px) {
   main .hero button {
-    padding: 1rem 6.5rem;
+    padding: 1rem 7rem;
     margin-left: 1rem;
     align-self: center;
     margin-bottom: 7rem;
