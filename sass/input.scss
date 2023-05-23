@@ -152,8 +152,9 @@ main {
 
       @include media.sm {
         padding: 1rem 7rem;
-        margin-left: 1rem;
+
         align-self: center;
+        justify-self: center;
         margin-bottom: 7rem;
       }
     }
@@ -202,11 +203,35 @@ main {
     .point {
       width: 20rem;
       height: 20rem;
-      background-color: gray;
+      background-color: #ec1e24;
       margin: 5rem;
+      display: flex;
+      flex-direction: column;
 
       @include media.sm {
         margin: 1rem;
+      }
+
+      #first-point-header,
+      #second-point-header,
+      #third-point-header {
+        // display: none;
+        color: white;
+        font-family: "Bebas Nue";
+        font-size: 2.5rem;
+        margin-top: 2rem;
+        margin-left: 2rem;
+      }
+
+      #first-point-body,
+      #second-point-body,
+      #third-point-body {
+        color: white;
+        font-family: "Montserrat";
+        font-size: 0.9rem;
+        text-align: left;
+        width: 80%;
+        margin-left: 2rem;
       }
     }
   }

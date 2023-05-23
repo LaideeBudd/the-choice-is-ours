@@ -147,8 +147,8 @@ main .hero button {
 @media (max-width: 600px) {
   main .hero button {
     padding: 1rem 7rem;
-    margin-left: 1rem;
     align-self: center;
+    justify-self: center;
     margin-bottom: 7rem;
   }
 }
@@ -197,13 +197,34 @@ main .hero button {
 #about .flexbox .point {
   width: 20rem;
   height: 20rem;
-  background-color: gray;
+  background-color: #ec1e24;
   margin: 5rem;
+  display: flex;
+  flex-direction: column;
 }
 @media (max-width: 600px) {
   #about .flexbox .point {
     margin: 1rem;
   }
+}
+#about .flexbox .point #first-point-header,
+#about .flexbox .point #second-point-header,
+#about .flexbox .point #third-point-header {
+  color: white;
+  font-family: "Bebas Nue";
+  font-size: 2.5rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+#about .flexbox .point #first-point-body,
+#about .flexbox .point #second-point-body,
+#about .flexbox .point #third-point-body {
+  color: white;
+  font-family: "Montserrat";
+  font-size: 0.9rem;
+  text-align: left;
+  width: 80%;
+  margin-left: 2rem;
 }
 
 #news {
