@@ -15,6 +15,8 @@ a {
 main {
   background-image: url("./../images/hero.png");
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   display: flex;
   flex-direction: column;
 }
@@ -23,6 +25,9 @@ main {
     background-image: none;
     background-color: #ec1e24;
   }
+}
+main .desktop-nav {
+  z-index: 1;
 }
 @media (max-width: 600px) {
   main .desktop-nav {
@@ -107,7 +112,7 @@ main .hero h1 {
   font-family: "Bebas Nue";
   color: #ec1e24;
   font-size: 9rem;
-  margin-top: 10rem;
+  margin-top: 20rem;
   margin-left: 3rem;
   line-height: 80%;
 }
@@ -158,6 +163,7 @@ main .hero button {
 }
 
 #about {
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
