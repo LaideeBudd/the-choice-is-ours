@@ -6,3 +6,22 @@ const menuToggle = () => {
     menuItems.style.display = "none";
   }
 };
+
+const heroButton = document.getElementById("hero-button");
+
+heroButton.addEventListener(
+  "mouseenter",
+  function (event) {
+    event.target.style.color = "white";
+    event.target.style.backgroundColor = "#ec1e24";
+  },
+  false
+);
+heroButton.addEventListener(
+  "mouseleave",
+  function (event) {
+    event.target.style.color = "";
+    event.target.style.backgroundColor = "";
+  },
+  false
+);
