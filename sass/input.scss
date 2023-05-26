@@ -553,6 +553,11 @@ main {
 
       p {
         margin-left: 0.5rem;
+        font-family: "Montserrat";
+
+        @include media.sm {
+          font-size: 0.75rem;
+        }
       }
     }
 

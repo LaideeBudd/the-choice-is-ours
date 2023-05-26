@@ -537,6 +537,12 @@ main .hero button {
 }
 #donate .donate-button-checkbox .checkbox-box p {
   margin-left: 0.5rem;
+  font-family: "Montserrat";
+}
+@media (max-width: 600px) {
+  #donate .donate-button-checkbox .checkbox-box p {
+    font-size: 0.75rem;
+  }
 }
 @media (max-width: 600px) {
   #donate .donate-button-checkbox {
