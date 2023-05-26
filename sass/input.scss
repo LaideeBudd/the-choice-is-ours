@@ -202,6 +202,7 @@ main {
   .flexbox {
     display: flex;
     flex-direction: row;
+    margin-bottom: 10rem;
 
     @include media.sm {
       flex-direction: column;
@@ -322,10 +323,11 @@ main {
   font-family: sans-serif;
   h1 {
     margin-top: 3rem;
-    font-family: sans-serif;
-    font-size: 3rem;
+    font-family: "Bebas Nue";
+    font-size: 5rem;
     justify-self: center;
     align-self: center;
+    color: #ec1e24;
 
     @include media.sm {
       font-size: 1.5rem;
@@ -350,12 +352,13 @@ main {
 
       .dollar-buttons {
         font-size: 1.5rem;
-        font-family: sans-serif;
+        font-family: "Montserrat";
         align-items: center;
         justify-content: center;
-        padding: 1rem;
-
-        background-color: #1e1e1e;
+        width: 4rem;
+        height: 4rem;
+        border: none;
+        background-color: #000;
         color: white;
         align-self: center;
         justify-self: center;
@@ -369,8 +372,8 @@ main {
     }
 
     p {
-      font-size: 2rem;
-      font-family: sans-serif;
+      font-size: 1.5rem;
+      font-family: "Montserrat";
       margin: 3rem;
       margin-left: 2rem;
 
@@ -385,9 +388,11 @@ main {
     .user-amount-box {
       display: flex;
       flex-direction: column;
+      justify-content: center;
 
       input {
-        margin-top: 0.25rem;
+        margin-top: 1.1rem;
+
         height: 3.75rem;
         width: 25rem;
 
@@ -398,6 +403,7 @@ main {
 
       label {
         margin-top: 0.5rem;
+        font-family: "Montserrat";
 
         @include media.sm {
           margin-bottom: 0.5rem;
@@ -409,7 +415,7 @@ main {
   .section-underline {
     width: 60%;
     align-self: center;
-    background-color: #1e1e1e;
+    background-color: #ec1e24;
     height: 3px;
 
     @include media.sm {
@@ -429,7 +435,7 @@ main {
     }
 
     .name-address {
-      margin-right: 8rem;
+      margin-right: 7.35rem;
       display: flex;
       flex-direction: column;
 
@@ -450,6 +456,7 @@ main {
 
       label {
         margin-top: 0.5rem;
+        font-family: "Montserrat";
 
         @include media.sm {
           margin-bottom: 0.5rem;
@@ -516,6 +523,7 @@ main {
 
       label {
         margin-top: 0.5rem;
+        font-family: "Montserrat";
 
         @include media.sm {
           margin-bottom: 0.5rem;
@@ -551,15 +559,19 @@ main {
     }
 
     button {
+      background-color: transparent;
+      color: #ec1e24;
+      font-family: "Montserrat";
+      font-size: 1rem;
+      border: 3px solid #ec1e24;
       padding: 1rem 3rem;
-      color: black;
-      font-family: sans-serif;
-      font-size: 1.25rem;
       margin: 1rem;
-      margin-right: 0;
 
       @include media.sm {
-        padding: 1rem 8rem;
+        padding: 1rem 7rem;
+
+        align-self: center;
+        justify-self: center;
       }
     }
   }
