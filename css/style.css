@@ -316,6 +316,7 @@ main .hero button {
   display: flex;
   flex-direction: column;
   font-family: sans-serif;
+  padding-bottom: 3rem;
 }
 #donate h1 {
   margin-top: 3rem;
@@ -483,10 +484,16 @@ main .hero button {
   flex-direction: column;
 }
 #donate .information .name-address .city-state-zip .state select {
-  height: 3.75rem;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 4rem;
   margin: 0.5rem;
   width: 6rem;
   font-family: "Montserrat";
+  background-color: transparent;
+  border-radius: 0;
+  text-decoration: none;
 }
 #donate .information .name-address .city-state-zip .zip {
   display: flex;
@@ -568,6 +575,68 @@ main .hero button {
     align-self: center;
     justify-self: center;
   }
+}
+
+footer {
+  background-color: #ec1e24;
+  font-family: "Montserrat";
+  color: #fff;
+}
+footer .top-footer {
+  display: flex;
+  flex-direction: row;
+  padding-top: 2rem;
+  margin-left: 3rem;
+}
+@media (max-width: 600px) {
+  footer .top-footer {
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+  }
+}
+footer .top-footer .sponsor {
+  display: flex;
+  flex-direction: column;
+  margin: 0rem 3rem;
+}
+@media (max-width: 600px) {
+  footer .top-footer .sponsor {
+    align-items: center;
+    margin: 0;
+  }
+}
+footer .top-footer .sponsor h4 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+@media (max-width: 600px) {
+  footer .top-footer .sponsor h4 {
+    margin-bottom: 1rem;
+  }
+}
+footer .top-footer .sponsor img {
+  width: 10rem;
+}
+@media (max-width: 600px) {
+  footer .top-footer .sponsor img {
+    width: 12rem;
+  }
+}
+@media (max-width: 600px) {
+  footer .top-footer .links p {
+    margin: 1rem;
+    text-align: center;
+  }
+}
+footer .bottom-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .bottom-footer h3 {
+  padding-bottom: 2rem;
+  font-size: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

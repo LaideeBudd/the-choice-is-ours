@@ -134,5 +134,13 @@ const dollarButtonBackground = (activeButton) => {
     case "fifty":
       fiftyDollar.style.backgroundColor = "#ec1e24";
       break;
+
+    case "none":
+      oneDollar.style.backgroundColor = "#000";
+      fiveDollar.style.backgroundColor = "#000";
+      tenDollar.style.backgroundColor = "#000";
+      twentyDollar.style.backgroundColor = "#000";
+      fiftyDollar.style.backgroundColor = "#000";
+      break;
   }
 };

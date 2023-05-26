@@ -324,6 +324,7 @@ main {
   display: flex;
   flex-direction: column;
   font-family: sans-serif;
+  padding-bottom: 3rem;
   h1 {
     margin-top: 3rem;
     font-family: "Bebas Nue";
@@ -492,10 +493,16 @@ main {
           flex-direction: column;
 
           select {
-            height: 3.75rem;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            appearance: none;
+            height: 4rem;
             margin: 0.5rem;
             width: 6rem;
             font-family: "Montserrat";
+            background-color: transparent;
+            border-radius: 0;
+            text-decoration: none;
           }
         }
 
@@ -584,6 +591,72 @@ main {
         align-self: center;
         justify-self: center;
       }
+    }
+  }
+}
+
+footer {
+  background-color: #ec1e24;
+  font-family: "Montserrat";
+  color: #fff;
+
+  .top-footer {
+    display: flex;
+    flex-direction: row;
+    padding-top: 2rem;
+    margin-left: 3rem;
+
+    @include media.sm {
+      flex-direction: column;
+      margin: 0;
+      align-items: center;
+    }
+    .sponsor {
+      display: flex;
+      flex-direction: column;
+      margin: 0rem 3rem;
+
+      @include media.sm {
+        align-items: center;
+        margin: 0;
+      }
+
+      h4 {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+
+        @include media.sm {
+          margin-bottom: 1rem;
+        }
+      }
+
+      img {
+        width: 10rem;
+
+        @include media.sm {
+          width: 12rem;
+        }
+      }
+    }
+
+    .links {
+      p {
+        @include media.sm {
+          margin: 1rem;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .bottom-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h3 {
+      padding-bottom: 2rem;
+      font-size: 1rem;
     }
   }
 }
