@@ -501,7 +501,8 @@ main {
             width: 6rem;
             font-family: "Montserrat";
             background-color: transparent;
-            border-radius: 0;
+            border: 1px solid #888;
+            border-radius: 2px;
             text-decoration: none;
           }
         }
