@@ -59,42 +59,80 @@ const tenDollar = document.getElementById("ten-dollar");
 const twentyDollar = document.getElementById("twenty-dollar");
 const fiftyDollar = document.getElementById("fifty-dollar");
 
-oneDollar.addEventListener("mouseenter", function (event) {
-  event.target.style.backgroundColor = "#ec1e24";
-});
+// Can do EITHER hover or click not both.
+// Choose to do the better UX decision
 
-oneDollar.addEventListener("mouseleave", function (event) {
-  event.target.style.backgroundColor = "";
-});
+// oneDollar.addEventListener("mouseenter", function (event) {
+//   event.target.style.backgroundColor = "#ec1e24";
+// });
 
-fiveDollar.addEventListener("mouseenter", function (event) {
-  event.target.style.backgroundColor = "#ec1e24";
-});
+// oneDollar.addEventListener("mouseleave", function (event) {
+//   event.target.style.backgroundColor = "";
+// });
 
-fiveDollar.addEventListener("mouseleave", function (event) {
-  event.target.style.backgroundColor = "";
-});
+// fiveDollar.addEventListener("mouseenter", function (event) {
+//   event.target.style.backgroundColor = "#ec1e24";
+// });
 
-tenDollar.addEventListener("mouseenter", function (event) {
-  event.target.style.backgroundColor = "#ec1e24";
-});
+// fiveDollar.addEventListener("mouseleave", function (event) {
+//   event.target.style.backgroundColor = "";
+// });
 
-tenDollar.addEventListener("mouseleave", function (event) {
-  event.target.style.backgroundColor = "";
-});
+// tenDollar.addEventListener("mouseenter", function (event) {
+//   event.target.style.backgroundColor = "#ec1e24";
+// });
 
-twentyDollar.addEventListener("mouseenter", function (event) {
-  event.target.style.backgroundColor = "#ec1e24";
-});
+// tenDollar.addEventListener("mouseleave", function (event) {
+//   event.target.style.backgroundColor = "";
+// });
 
-twentyDollar.addEventListener("mouseleave", function (event) {
-  event.target.style.backgroundColor = "";
-});
+// twentyDollar.addEventListener("mouseenter", function (event) {
+//   event.target.style.backgroundColor = "#ec1e24";
+// });
 
-fiftyDollar.addEventListener("mouseenter", function (event) {
-  event.target.style.backgroundColor = "#ec1e24";
-});
+// twentyDollar.addEventListener("mouseleave", function (event) {
+//   event.target.style.backgroundColor = "";
+// });
 
-fiftyDollar.addEventListener("mouseleave", function (event) {
-  event.target.style.backgroundColor = "";
-});
+// fiftyDollar.addEventListener("onmouseover", function (event) {
+//   event.target.style.backgroundColor = "#ec1e24";
+// });
+
+// fiftyDollar.addEventListener("mouseleave", function (event) {
+//   event.target.style.backgroundColor = "";
+// });
+
+// This makes sets the active button color to red
+
+const dollarButtonBackground = (activeButton) => {
+  // set all buttons to the grey background color  \
+  oneDollar.style.backgroundColor = "#000";
+  fiveDollar.style.backgroundColor = "#000";
+  tenDollar.style.backgroundColor = "#000";
+  twentyDollar.style.backgroundColor = "#000";
+  fiftyDollar.style.backgroundColor = "#000";
+
+  // switch statement to change the active button
+
+  switch (activeButton) {
+    case "one":
+      oneDollar.style.backgroundColor = "#ec1e24";
+      break;
+
+    case "five":
+      fiveDollar.style.backgroundColor = "#ec1e24";
+      break;
+
+    case "ten":
+      tenDollar.style.backgroundColor = "#ec1e24";
+      break;
+
+    case "twenty":
+      twentyDollar.style.backgroundColor = "#ec1e24";
+      break;
+
+    case "fifty":
+      fiftyDollar.style.backgroundColor = "#ec1e24";
+      break;
+  }
+};
